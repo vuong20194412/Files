@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Files</string>
+    <string name="cancel">Cancel</string>
+    <string name="rename">Rename</string>
+    <string name="delete">Delete</string>
+    <string name="create">Create</string>
+    <string name="intent_pathname">Pathname</string>
+    <string name="failed_delete">Delete failed</string>
+    <string name="type_file_non_open">Can not open type file</string>
+    <string name="existed_pathname">Pathname is existed</string>
+    <string name="non_valid_name">Name is non valid</string>
+    <string name="must_same_prefix">copy file must have prefix same source file</string>
+    <string name="non_valid_pathname">Pathname is non valid</string>
+    <string name="copy">Copy</string>
+    <string name="move">Move</string>
+    <string name="create_directory">Create directory</string>
+    <string name="create_txt_file">Create txt file</string>
+    <string name="zoom_in">Zoom in</string>
+    <string name="zoom_out">Zoom out</string>
+</resources>
