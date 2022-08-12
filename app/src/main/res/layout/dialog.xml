@@ -9,36 +9,28 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/title_dialog"
+        android:id="@+id/textView_title__dialog"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:gravity="center_vertical"
         android:textColor="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/notification_dialog"
+        android:id="@+id/textView_notification__dialog"
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_dialog" />
+        android:layout_height="32dp" />
 
     <EditText
-        android:id="@+id/editText_dialog"
+        android:id="@+id/editText__dialog"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:inputType="textUri"
-        app:layout_constraintBottom_toTopOf="@+id/button_list"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notification_dialog"
-        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+        android:hint="Enter"
+        android:autofillHints="Enter"
+        tools:ignore="HardcodedText" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:orientation="horizontal"
@@ -47,27 +39,19 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/cancel_button_dialog"
-            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/cancel_button__dialog"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@android:string/cancel"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/positive_button_dialog"
-            app:layout_constraintEnd_toStartOf="@+id/positive_button_dialog"
-            app:layout_constraintTop_toTopOf="@+id/positive_button_dialog" />
+            android:layout_weight="1"
+            style="?android:attr/buttonBarNegativeButtonStyle" />
 
         <Button
-            android:id="@+id/positive_button_dialog"
-            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/positive_button__dialog"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:layout_weight="1"
+            style="?android:attr/buttonBarPositiveButtonStyle" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
 </LinearLayout>

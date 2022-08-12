@@ -4,10 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="8dp"
-    tools:context=".TextActivity">
+    tools:context=".DisplayingTxtActivity">
 
     <TextView
-        android:id="@+id/textView_text"
+        android:id="@+id/textView__activity_displaying_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
